@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SignalRCoreContainerTest.ConsoleTestTwo": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

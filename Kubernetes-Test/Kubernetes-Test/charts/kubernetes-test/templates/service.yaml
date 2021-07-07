@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "kubernetes-test.fullname" . }}
+  labels:
+    app: {{ template "kubernetes-test.name" . }}
+    chart: {{ template "kubernetes-test.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "kubernetes-test.name" . }}
+    release: {{ .Release.Name }}

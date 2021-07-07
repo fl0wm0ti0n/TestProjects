@@ -1,0 +1,16 @@
+﻿<Window x:Class="SignalRClient_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignalRClient_Test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="466.573" Width="1067.854">
+    <Grid Margin="0,0,2,0">
+        <ListBox x:Name="messageList" HorizontalAlignment="Left" Height="385" VerticalAlignment="Top" Width="1038" Margin="10,10,0,0" IsSynchronizedWithCurrentItem="False"/>
+        <Label x:Name="lblConnection" Content="ConnectionID:" HorizontalAlignment="Left" Margin="10,400,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button x:Name="btnConnect" Content="Connect" HorizontalAlignment="Left" Margin="923,400,0,0" VerticalAlignment="Top" Width="125" Height="26" Click="btnConnect_Click"/>
+        <TextBlock x:Name="tbMain" HorizontalAlignment="Left" Margin="104,400,0,0" TextWrapping="Wrap" Text="Not Connected" VerticalAlignment="Top" RenderTransformOrigin="0.492,0.5" Height="26" Width="335"/>
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="23" Margin="456,403,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="462"/>
+    </Grid>
+</Window>
