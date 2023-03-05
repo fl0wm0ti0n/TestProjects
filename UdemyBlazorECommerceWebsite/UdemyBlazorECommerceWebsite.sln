@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyBlazorECommerceWebsite.Server", "Server\UdemyBlazorECommerceWebsite.Server.csproj", "{7097EA49-CF37-4C96-AEEA-5B7352723BBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyBlazorECommerceWebsite.Server", "Server\UdemyBlazorECommerceWebsite.Server.csproj", "{7097EA49-CF37-4C96-AEEA-5B7352723BBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyBlazorECommerceWebsite.Client", "Client\UdemyBlazorECommerceWebsite.Client.csproj", "{EE3847D0-CD03-422F-AAE3-17207A88D913}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyBlazorECommerceWebsite.Client", "Client\UdemyBlazorECommerceWebsite.Client.csproj", "{EE3847D0-CD03-422F-AAE3-17207A88D913}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyBlazorECommerceWebsite.Shared", "Shared\UdemyBlazorECommerceWebsite.Shared.csproj", "{01488F52-875B-4626-AB94-911220D09A99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyBlazorECommerceWebsite.Shared", "Shared\UdemyBlazorECommerceWebsite.Shared.csproj", "{01488F52-875B-4626-AB94-911220D09A99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
