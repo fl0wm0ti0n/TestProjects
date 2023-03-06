@@ -2,6 +2,7 @@ global using UdemyBlazorECommerceWebsite.Shared;
 global using Microsoft.EntityFrameworkCore;
 global using UdemyBlazorECommerceWebsite.Server.Data;
 global using UdemyBlazorECommerceWebsite.Server.Services.ProductService;
+global using UdemyBlazorECommerceWebsite.Server.Services.CategoryService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
