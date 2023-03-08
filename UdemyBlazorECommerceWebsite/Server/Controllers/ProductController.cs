@@ -28,5 +28,12 @@ namespace UdemyBlazorECommerceWebsite.Server.Controllers
             var result = await _productService.GetProductAsync(productId);
             return Ok(result);
         }
+
+        [HttpGet("category/{categoryUrl}")]
+        public async Task<ActionResult<ServiceResponse<Product>>> GetProductsByCategory(string categoryUrl)
+        {
+            var result = await _productService.GetProductsByCategoryAsync(categoryUrl);
+            return Ok(result);
+        }
     }
 }
