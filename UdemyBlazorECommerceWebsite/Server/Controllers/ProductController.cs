@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using UdemyBlazorECommerceWebsite.Shared;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace UdemyBlazorECommerceWebsite.Server.Controllers
 {
@@ -33,6 +31,20 @@ namespace UdemyBlazorECommerceWebsite.Server.Controllers
         public async Task<ActionResult<ServiceResponse<Product>>> GetProductsByCategory(string categoryUrl)
         {
             var result = await _productService.GetProductsByCategoryAsync(categoryUrl);
+            return Ok(result);
+        }
+
+        [HttpGet("search/{searchText}")]
+        public async Task<ActionResult<ServiceResponse<Product>>> SearchProducts(string searchText)
+        {
+            var result = await _productService.SearchProducts(searchText);
+            return Ok(result);
+        }
+
+        [HttpGet("searchSuggestions/{searchText}")]
+        public async Task<ActionResult<ServiceResponse<Product>>> GetProductSearchSuggestions(string searchText)
+        {
+            var result = await _productService.GetProductSearchSuggestions(searchText);
             return Ok(result);
         }
     }
